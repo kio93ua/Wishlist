@@ -1,0 +1,22 @@
+<div class="wrap">
+  <h1>{{ title }}</h1>
+
+  {% if tabs %}
+    <h2 class="nav-tab-wrapper">
+      {% for data in tabs %}
+        <a href="{{ data.link }}" class="{{ data.class }}">
+          {{ data.title }}
+        </a>
+      {% endfor %}
+    </h2>
+  {% endif %}
+
+  <form method="post" action="options.php" enctype="multipart/form-data">
+    {{ fields|raw }}
+    <p class="submit">
+      <input type="hidden" name="tab" value="{{ current_tab }}" />
+      <input name="Submit" type="submit" class="button-primary" value="{{ save_button }}" />
+    </p>
+  </form>
+
+</div>

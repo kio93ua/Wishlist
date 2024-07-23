@@ -1,0 +1,114 @@
+<div class="dcaw-wishlist-table {{ default.active ? 'is-default' }}">
+
+  <div class="dcaw-table-header">
+    <div class="dcaw-table-header__title">
+      {{ title }}
+      {{ (count ? '<span>'~count~'</span>')|raw }}
+      {{ (default.active ? '<em>'~default.text~'</em>')|raw }}
+    </div>
+
+    {% if actions %}
+      <div class="dcaw-table-header__actions">
+
+        <div class="dcaw-dropdown">
+          <button type="button" class="dcaw-dropdown__toggle dcaw-btn-w-icon js-dcaw-dropdown">
+            {{ edit.icon|raw }}
+            <span>{{ edit.text }}</span>
+          </button>
+
+          <div class="dcaw-dropdown__content">
+            <form class="dcaw-form" data-name="edit_list">
+              <input type="hidden" name="id" value="{{ id }}">
+              <input type="text" name="title" value="{{ title }}">
+              <button class="dcaw-btn-w-icon" type="submit">
+                {{ edit_form.icon|raw }}
+                <span>{{ edit_form.text }}</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {% if move_form.lists %}
+          <div class="dcaw-dropdown">
+            <button type="button" class="dcaw-dropdown__toggle dcaw-btn-w-icon js-dcaw-dropdown js-dcaw-move-products">
+              {{ move_form.icon|raw }}
+              <span>{{ move_form.text }}</span>
+            </button>
+
+            <div class="dcaw-dropdown__content">
+              <form class="dcaw-form" data-name="move_products">
+                <input type="hidden" name="prev_list" value="{{ id }}">
+                {% for next_list in move_form.lists %}
+                  <label class="dcaw-radio">
+                    <input type="radio" name="next_list"
+                           value="{{ next_list.id }}" {{ loop.first ? 'checked="checked"' : '' }}/>
+                    <span>{{ next_list.title }}</span>
+                  </label>
+                {% endfor %}
+
+                <button class="dcaw-btn-w-icon" type="submit">
+                  {{ edit_form.icon|raw }}
+                  <span>{{ edit_form.text }}</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        {% endif %}
+
+        {% for key, value in actions %}
+          <button class="dcaw-btn-w-icon" type="button" data-action="{{ key }}" data-id="{{ id }}">
+            <span>{{ value.text }}</span>
+            {{ value.icon|raw }}
+          </button>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  </div>
+
+  {% if products %}
+    <ul class="dcaw-products-grid">
+      {% for product_id, product in products %}
+        <li>
+          <div class="dcaw-product-tile">
+            <a class="dcaw-product-tile__link" href="{{ product.link }}">
+              {{ product.img|raw }}
+            </a>
+
+            <h3 class="dcaw-product-tile__title">
+              <a href="{{ product.link }}">
+                {{ product.title }}
+              </a>
+            </h3>
+
+            <span class="dcaw-product-tile__price">
+            {{ product.price|raw }}
+            </span>
+
+            <div class="dcaw-product-tile__buy">
+              {{ product.buy|raw }}
+            </div>
+
+            {% if move_form.lists %}
+              <div class="dcaw-product-tile__select">
+                <label class="dcaw-checkbox">
+                  <input type="checkbox" name="move_products" value="{{ product_id }}">
+                  <span></span>
+                </label>
+              </div>
+            {% endif %}
+
+            <button class="dcaw-product-tile__wishlist js-dcaw-wishlist-remove-btn"
+                    data-title="{{ product.title }}"
+                    data-list-id="{{ id }}"
+                    data-id="{{ product_id }}">&times;
+            </button>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    {{ empty_content|raw }}
+  {% endif %}
+
+</div>

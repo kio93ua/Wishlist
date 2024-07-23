@@ -1,0 +1,43 @@
+{
+  "name": "dits/compare-and-wishlist",
+  "description": "Woocommerce Compare and Wishlist",
+  "homepage": "https://github.com",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/Cle-Menza/dits-compare-and-wishlist/issues"
+  },
+  "authors": [
+    {
+      "name": "TheMkvz",
+      "email": "mukovoz.igor@gmail.com",
+      "homepage": "https://github.com/Cle-Menza"
+    }
+  ],
+  "keywords": [
+    "wishlist",
+    "compare"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Dits\\CaW\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.4.0",
+    "composer/installers": "~1.0",
+    "vlucas/phpdotenv": "^5.3",
+    "twig/twig": "^3.0",
+    "ext-json": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "vendor/{$name}": [
+        "vendor/package"
+      ]
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^5.3"
+  }
+}

@@ -1,0 +1,13 @@
+<button
+  type="button"
+  class="{{ ['js-dcaw-wishlist-btn', 'dcaw-wishlist-btn', class]|join(' ') }}"
+  data-id="{{ id }}"
+  data-title="{{ title }}"
+>
+  {% if text %}
+    <span>{{ text }}</span>
+  {% endif %}
+  {% if icon %}
+    {{ icon|raw }}
+  {% endif %}
+</button>

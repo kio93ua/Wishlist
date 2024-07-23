@@ -1,0 +1,220 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Woocommerce Compare and Wishlist\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-14 10:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.4; wp-5.8.1\n"
+"X-Domain: dits"
+
+#: config/fields.php:51 includes/Admin/AdminPage.php:100
+msgid "Add to compare button css classes (separate comma)"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:46
+msgid "admin_page.compare_title"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:42
+msgid "admin_page.general_desc"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:41
+msgid "admin_page.general_title"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:50
+msgid "admin_page.wishlist_title"
+msgstr ""
+
+#: config/fields.php:50 includes/Admin/AdminPage.php:99
+msgid "Button class"
+msgstr ""
+
+#: config/fields.php:63 includes/Admin/AdminPage.php:112
+msgid "Button svg icon"
+msgstr ""
+
+#: config/fields.php:56 includes/Admin/AdminPage.php:105
+msgid "Button text"
+msgstr ""
+
+#: config/fields.php:12 config/fields.php:59
+#: includes/frontend/class-compare.php:59 includes/Admin/AdminPage.php:108
+msgid "Compare"
+msgstr ""
+
+#: includes/frontend/class-compare.php:153
+#, php-format
+msgid "Compare %s products"
+msgstr ""
+
+#: config/fields.php:82 includes/Admin/AdminPage.php:131
+msgid "Compare attributes"
+msgstr ""
+
+#: config/fields.php:57 includes/Admin/AdminPage.php:106
+msgid "Compare button text"
+msgstr ""
+
+#: config/fields.php:94 includes/Admin/AdminPage.php:148
+msgid "Compare dimensions"
+msgstr ""
+
+#: config/defaults.php:24
+msgid "Compare is loading"
+msgstr ""
+
+#: config/fields.php:88 includes/Admin/AdminPage.php:137
+msgid "Compare taxonomies"
+msgstr ""
+
+#: config/fields.php:69 includes/Admin/AdminPage.php:118
+msgid "Css selector for compare counters"
+msgstr ""
+
+#: _old/class-settings.php:83
+msgid "DITS CaW"
+msgstr ""
+
+#: _old/class-settings.php:84 _old/class-settings.php:101
+msgid "DITS Compare and Wishlist"
+msgstr ""
+
+#: config/fields.php:17 includes/Admin/AdminPage.php:66
+msgid "Enable compare"
+msgstr ""
+
+#: config/fields.php:112 includes/Admin/AdminPage.php:161
+msgid "Enable wishlist"
+msgstr ""
+
+#: config/fields.php:5
+msgid "General"
+msgstr ""
+
+#: config/fields.php:6
+msgid "General settings."
+msgstr ""
+
+#: config/fields.php:98 includes/Admin/AdminPage.php:152
+msgid "Height"
+msgstr ""
+
+#: config/fields.php:25 config/fields.php:39 includes/Admin/AdminPage.php:74
+#: includes/Admin/AdminPage.php:88
+msgid "Hook for display compare button."
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://mkvz.work"
+msgstr ""
+
+#: config/fields.php:38 includes/Admin/AdminPage.php:87
+msgid "In loop button hook"
+msgstr ""
+
+#: config/fields.php:97 includes/Admin/AdminPage.php:151
+msgid "Length"
+msgstr ""
+
+#: config/fields.php:32 config/fields.php:44 includes/Admin/AdminPage.php:81
+#: includes/Admin/AdminPage.php:93
+msgid "Manual"
+msgstr ""
+
+#: config/fields.php:75 includes/Admin/AdminPage.php:124
+msgid "Max compared"
+msgstr ""
+
+#: config/defaults.php:21
+msgid "Max product in compare"
+msgstr ""
+
+#: config/fields.php:76 includes/Admin/AdminPage.php:125
+msgid "Max product to compare"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:140 includes/Admin/AdminPage.php:141
+#: includes/Admin/AdminPage.php:142
+msgid "need replace"
+msgstr ""
+
+#: config/defaults.php:22
+msgid "Product added to compare"
+msgstr ""
+
+#: config/defaults.php:23
+msgid "Product remove from compare"
+msgstr ""
+
+#: _old/class-settings.php:104
+msgid "Save settings"
+msgstr ""
+
+#: _old/class-settings.php:416
+msgid "Settings"
+msgstr ""
+
+#: config/fields.php:13
+msgid "Settings the compare."
+msgstr ""
+
+#: config/fields.php:108
+msgid "Settings the wishlist."
+msgstr ""
+
+#: config/fields.php:24 includes/Admin/AdminPage.php:73
+msgid "Single product button hook"
+msgstr ""
+
+#: config/fields.php:64 includes/Admin/AdminPage.php:113
+msgid "Svg icon code"
+msgstr ""
+
+#. Author of the plugin
+msgid "TheMkvz, Dits.md"
+msgstr ""
+
+#: config/fields.php:18 includes/Admin/AdminPage.php:67
+msgid "Turn on compare functionality"
+msgstr ""
+
+#: config/fields.php:113 includes/Admin/AdminPage.php:162
+msgid "Turn on wishlist functionality"
+msgstr ""
+
+#: config/fields.php:100 includes/Admin/AdminPage.php:154
+msgid "Weight"
+msgstr ""
+
+#: config/fields.php:99 includes/Admin/AdminPage.php:153
+msgid "Width"
+msgstr ""
+
+#: config/fields.php:107
+msgid "Wishlist"
+msgstr ""
+
+#. Name of the plugin
+msgid "Woocommerce Compare and Wishlist"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Woocommerce Compare and Wishlist with webpack build script, composer "
+"autoloader and namespacing"
+msgstr ""

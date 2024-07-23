@@ -1,0 +1,20 @@
+<div class="dcaw-header">
+
+  <div class="dcaw-header__title">
+    {{ title }}
+  </div>
+
+  <div class="dcaw-header__actions">
+
+    <button type="button" class="js-create-wishlist dcaw-btn-w-icon">
+      {{ action_icon|raw }}
+      <span>{{ action_text }}</span>
+    </button>
+
+  </div>
+
+</div>
+
+<div class="dcaw-wishlist">
+  {{ content|raw }}
+</div>
