@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Woocommerce Compare and Wishlist
+ * Plugin Name:       git statusWishlist
  * Plugin URI:        https://github.com/Cle-Menza/dits-compare-and-wishlist
  * Description:       Woocommerce Compare and Wishlist with webpack build script, composer autoloader and namespacing
  * Version:           1.0.0
