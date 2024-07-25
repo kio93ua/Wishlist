@@ -36,7 +36,7 @@ class Activator implements HooksInterface {
         if ( get_transient( self::KEY ) ) {
             ?>
             <div class="updated notice is-dismissible">
-                <p>Thank you for using DITS Compare and Wishlist! <strong>You are awesome</strong>.</p>
+                <p>Thank you for using DITS Wishlist! <strong>You are awesome</strong>.</p>
             </div>
             <?php
             delete_transient( self::KEY );
@@ -45,7 +45,7 @@ class Activator implements HooksInterface {
         if ( ! self::compatible_version() ) {
             ?>
             <div class="notice notice-error is-dismissible">
-                <p><strong>DITS Compare and Wishlist</strong> requires WordPress 5.0 or higher!</p>
+                <p><strong>DITS Wishlist</strong> requires WordPress 5.0 or higher!</p>
             </div>
             <?php
 

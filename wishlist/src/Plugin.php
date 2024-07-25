@@ -9,7 +9,6 @@ use Dits\CaW\Admin\Settings;
 use Dits\CaW\Configuration\ActivatorConfiguration;
 use Dits\CaW\Configuration\AdminPageConfiguration;
 use Dits\CaW\Configuration\AssetsConfiguration;
-use Dits\CaW\Configuration\CompareConfiguration;
 use Dits\CaW\Configuration\FieldsConfiguration;
 use Dits\CaW\Configuration\I18nConfiguration;
 use Dits\CaW\Configuration\RestApiConfiguration;
@@ -58,14 +57,13 @@ class Plugin {
             ViewConfiguration::class,
             AssetsConfiguration::class,
             I18nConfiguration::class,
-            CompareConfiguration::class,
             RestApiConfiguration::class,
             WishlistConfiguration::class,
             FieldsConfiguration::class,
         ] );
 
         foreach ( $this->container->get_values() as $key => $value ) {
-            if ( $this->container[ $key ] instanceof HooksInterface) {
+            if ( isset($this->container[ $key ]) && $this->container[ $key ] instanceof HooksInterface) {
                 $this->container[ $key ]->hooks();
             }
         }

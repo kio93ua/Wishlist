@@ -134,3 +134,4 @@ class Container implements \ArrayAccess {
         $configuration->modify( $this );
     }
 }
+?>

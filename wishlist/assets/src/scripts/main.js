@@ -7,7 +7,7 @@
 /* global dcawGeneral */
 
 import Wishlist from './wishlist'
-import Compare from './compare'
+
 import dropdown from './dropdown'
 
 document.addEventListener('DOMContentLoaded', () => {

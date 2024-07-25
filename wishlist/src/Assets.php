@@ -2,7 +2,7 @@
 
 namespace Dits\CaW;
 
-use Dits\CaW\Modules\Compare;
+
 use Dits\CaW\Modules\Wishlist;
 use Dits\CaW\Utils\HooksInterface;
 
@@ -10,15 +10,13 @@ class Assets implements HooksInterface {
     protected string $plugin_version;
     protected string $plugin_url;
     protected string $plugin_dir;
-    protected ?Compare $compare;
     protected ?Wishlist $wishlist;
     protected string $min;
 
-    public function __construct( $plugin_version, $plugin_url, $plugin_dir, $compare, $wishlist ) {
+    public function __construct( $plugin_version, $plugin_url, $plugin_dir, $wishlist ) {
         $this->plugin_version = $plugin_version;
         $this->plugin_url     = $plugin_url;
         $this->plugin_dir     = $plugin_dir;
-        $this->compare        = $compare;
         $this->wishlist       = $wishlist;
 
         $this->min = WP_DEBUG ? '' : '.min';
@@ -73,17 +71,6 @@ class Assets implements HooksInterface {
             'rest'  => get_rest_url() . $this->plugin_dir,
             'nonce' => wp_create_nonce( 'wp_rest' ),
         ] );
-
-        if ( $this->compare ) {
-            $data = $this->compare->get_config();
-
-            if ( $selector = $this->compare->settings->get( 'count_selector', 'compare' ) ) {
-                $data['selectors']['counters'] = implode( ',', [ $selector, $data['selectors']['counters'] ] );
-            }
-
-            wp_localize_script( $this->plugin_dir . '-front', 'dcawCompare', $data );
-        }
-
         if ( $this->wishlist ) {
             $data = $this->wishlist->get_config();
 

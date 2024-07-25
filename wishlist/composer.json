@@ -1,6 +1,6 @@
 {
-  "name": "dits/compare-and-wishlist",
-  "description": "Woocommerce Compare and Wishlist",
+  "name": "dits/wishlist",
+  "description": "Woocommerce Wishlist Plugin",
   "homepage": "https://github.com",
   "type": "wordpress-plugin",
   "license": "MIT",
@@ -15,8 +15,7 @@
     }
   ],
   "keywords": [
-    "wishlist",
-    "compare"
+    "wishlist"
   ],
   "autoload": {
     "psr-4": {

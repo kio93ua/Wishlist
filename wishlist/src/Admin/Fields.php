@@ -71,40 +71,7 @@ class Fields {
         ];
     }
 
-    public function get_compare_fields(): array {
-        return [
-            [
-                'id'      => 'max',
-                'label'   => __( 'Max compared', 'dits' ),
-                'desc'    => __( 'Max product to compare', 'dits' ),
-                'type'    => 'number',
-                'default' => 6
-            ],
-            [
-                'id'      => 'attributes',
-                'label'   => __( 'Compare attributes', 'dits' ),
-                'type'    => 'checkbox',
-                'default' => '',
-            ],
-            [
-                'id'      => 'taxonomies',
-                'label'   => __( 'Compare taxonomies', 'dits' ),
-                'type'    => 'multicheck',
-                'options' => $this->get_compare_taxonomies()
-            ],
-            [
-                'id'      => 'dimensions',
-                'label'   => __( 'Compare dimensions', 'dits' ),
-                'type'    => 'multicheck',
-                'options' => [
-                    'length' => __( 'Length', 'dits' ),
-                    'height' => __( 'Height', 'dits' ),
-                    'width'  => __( 'Width', 'dits' ),
-                    'weight' => __( 'Weight', 'dits' ),
-                ]
-            ]
-        ];
-    }
+    
 
     public function get_wishlist_compare(): array {
         return [];
@@ -118,10 +85,7 @@ class Fields {
                 'desc'     => null,
                 'callback' => null
             ],
-            [
-                'id'    => 'compare',
-                'title' => __( 'admin_page.compare_title', 'dits' )
-            ],
+            
             [
                 'id'    => 'wishlist',
                 'title' => __( 'admin_page.wishlist_title', 'dits' )
@@ -131,10 +95,7 @@ class Fields {
 
     public function get_fields(): array {
         return [
-            'compare'  => array_merge(
-                $this->get_defaults_field( 'compare' ),
-                $this->get_compare_fields()
-            ),
+            
             'wishlist' => array_merge(
                 $this->get_defaults_field( 'wishlist' ),
                 $this->get_wishlist_compare()

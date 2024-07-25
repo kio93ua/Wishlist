@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name:       git statusWishlist
- * Plugin URI:        https://github.com/Cle-Menza/dits-compare-and-wishlist
- * Description:       Woocommerce Compare and Wishlist with webpack build script, composer autoloader and namespacing
+ * Plugin Name:       DITS Woocommerce Wishlist
+ * Plugin URI:        https://dits.md
+ * Description:       Woocommerce  Wishlist 
  * Version:           1.0.0
  * Author:            TheMkvz, Dits.md
  * Author URI:        https://github.com/Cle-Menza

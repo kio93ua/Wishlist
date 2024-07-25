@@ -21,11 +21,11 @@ class AdminPage implements HooksInterface {
     }
 
     public function get_menu_title(): string {
-        return __( 'Dits Compare & Wishlist', 'dits' );
+        return __( 'DITS Woocommerce Wishlist', 'dits' );
     }
 
     public function get_page_title(): string {
-        return __( 'Dits Compare and Wishlist Settings', 'dits' );
+        return __( 'DITS Woocommerce Wishlist', 'dits' );
     }
 
     public function get_plugins_page_title(): string {
@@ -33,7 +33,7 @@ class AdminPage implements HooksInterface {
     }
 
     public function get_slug(): string {
-        return 'dits-compare-and-wishlist';
+        return 'dits-wishlist';
     }
 
     public function get_capability(): string {

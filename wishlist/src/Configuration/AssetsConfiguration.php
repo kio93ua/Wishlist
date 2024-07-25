@@ -12,7 +12,11 @@ class AssetsConfiguration implements ConfigurationInterface {
      */
     public function modify( Container $container ) {
         $container['assets'] = $container->service( function ( Container $container ) {
-            return new Assets( $container['plugin_version'], $container['plugin_url'], $container['plugin_dir'], $container['compare'], $container['wishlist'] );
+            if (isset($container['wishlist'])) {
+                return new Assets( $container['plugin_version'], $container['plugin_url'], $container['plugin_dir'], $container['wishlist'] );
+            } else {
+                return new Assets( $container['plugin_version'], $container['plugin_url'], $container['plugin_dir'], null );
+            }
         } );
     }
 }

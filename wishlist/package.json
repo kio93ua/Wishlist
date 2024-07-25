@@ -1,12 +1,11 @@
 {
-  "name": "dits-compare-and-wishlist",
+  "name": "dits-wishlist",
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
-    "wishlist",
-    "compare"
+    "wishlist"
   ],
-  "description": "Woocommerce Compare and Wishlist",
+  "description": "Woocommerce Wishlist Plugin",
   "repository": {
     "type": "git",
     "url": "https://github.com/Cle-Menza/dits-compare-and-wishlist"

@@ -47,7 +47,7 @@ vendor
 bower_components
 node_modules
 _test-src
-dist
+
 
 # Logs
 logs
